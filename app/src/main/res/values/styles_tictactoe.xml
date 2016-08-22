@@ -1,0 +1,29 @@
+<resources>
+
+    <style name="Zeta.TextView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/zeta_md_black_1000</item>
+    </style>
+
+    <style name="Zeta.TextView.Grey">
+        <item name="android:textColor">@color/zeta_md_grey_500</item>
+    </style>
+
+    <style name="Zeta.TextView.TicTacToe">
+        <item name="android:textColor">@color/zeta_white</item>
+        <item name="android:textSize">@dimen/megaLargeTextSize</item>
+    </style>
+
+    <style name="Zeta.TextView.TicTacToe.Subtitle">
+        <item name="android:textSize">@dimen/mediumTextSize</item>
+    </style>
+
+    <style name="Zeta.TextView.Player">
+        <item name="android:textColor">@color/zeta_white</item>
+        <item name="android:textSize">@dimen/largeTextSize</item>
+    </style>
+
+    <style name="Zeta.TextView.Player.Score">
+        <item name="android:textSize">@dimen/smallTextSize</item>
+    </style>
+
+</resources>

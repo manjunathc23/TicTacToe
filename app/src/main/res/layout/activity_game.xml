@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zeta_md_grey_700"
+    android:orientation="vertical"
+    tools:context=".activities.GameActivity">
+
+    <TextView
+        android:id="@+id/game_title_with_drawables_left_right"
+        style="@style/Zeta.TextView.TicTacToe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_4x_padding_margin"
+        android:layout_marginRight="@dimen/default_4x_padding_margin"
+        android:layout_marginTop="@dimen/default_4x_padding_margin"
+        android:drawableLeft="@drawable/tictactoegamegrey"
+        android:drawableRight="@drawable/ic_person_outline_black_48dp"
+        android:gravity="center"
+        android:text="@string/game_title" />
+
+    <TextView
+        android:id="@+id/player_turn"
+        style="@style/Zeta.TextView.TicTacToe.Subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_4x_padding_margin"
+        android:layout_marginRight="@dimen/default_4x_padding_margin"
+        android:layout_marginTop="@dimen/default_4x_padding_margin"
+        android:gravity="center" />
+
+    <zeta.android.apps.tictactoe.views.game.GameBoard
+        android:id="@+id/game_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/default_4x_padding_margin"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Zeta.TextView.Player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/default_2x_padding_margin"
+                android:text="@string/game_player_counter" />
+
+            <TextView
+                android:id="@+id/player_user_count"
+                style="@style/Zeta.TextView.Player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/default_2x_padding_margin" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_5x_padding_margin"
+            android:layout_marginRight="@dimen/default_5x_padding_margin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Zeta.TextView.Player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/default_2x_padding_margin"
+                android:text="@string/game_ties_counter" />
+
+            <TextView
+                android:id="@+id/player_tie_count"
+                style="@style/Zeta.TextView.Player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/default_2x_padding_margin" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Zeta.TextView.Player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/default_2x_padding_margin"
+                android:text="@string/game_computer_counter" />
+
+            <TextView
+                android:id="@+id/player_computer_count"
+                style="@style/Zeta.TextView.Player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/default_2x_padding_margin" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/zeta_game_reset_play_again_btn"
+        style="@style/GreyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_4x_padding_margin"
+        android:text="@string/game_reset_board" />
+
+
+</LinearLayout>

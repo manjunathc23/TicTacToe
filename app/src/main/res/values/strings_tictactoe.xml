@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="game_title">Tic tac toe</string>
+
+    <string name="empty"></string>
+    <string name="game_over">Game Over!</string>
+    <string name="game_draw">Game draw!</string>
+    <string name="game_player_wins">Player wins!</string>
+    <string name="game_computer_wins">Computer wins!</string>
+    <string name="game_make_your_move">Make your move</string>
+
+    <string name="game_ties_counter">Ties</string>
+    <string name="game_player_counter">Player(X)</string>
+    <string name="game_computer_counter">Computer(0)</string>
+
+    <string name="game_reset_board">reset</string>
+    <string name="game_players_turn">Player(X) turn</string>
+    <string name="game_computers_turn">Computer(0) turn</string>
+
+</resources>
